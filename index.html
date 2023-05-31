@@ -59,18 +59,18 @@
     </div>
     <div class="main">
         <div class="banner">
-            <div class="photo"><img src="./image/link17_4.jpg" alt="배너 이미지"></div>
-            <div class="txt">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, fugit?</p>
-            </div>
-            <div class="arr"><img src="./image/arr.png" alt="우측 화살표"></div>
+            <a href="#" class="photo"><img src="./image/link17_4.jpg" alt="배너 이미지"></a>
+            <a href="#"  class="txt">
+                <h3>Lorem ipsum dolor sit. adipisicing elit. Provident</h3>
+                <p>Lorem ipsum dolor sit fugit? Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </a>
+            <a href="#" class="arr"><img src="./image/arr.png" alt="우측 화살표"></a>
         </div>
         <div class="notice">
             <h3>공지사항</h3>
             <ul>
                 <li><a href="#">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, cupiditate</p>
+                    <p>Lorem ipsum dolor sit, Lorem, ipsum dolor amet consectetur , cupiditate</p>
                     <span>0000.00.00</span>
                 </a></li>
                 <li><a href="#">
@@ -86,15 +86,32 @@
         <div class="gallery">
             <h3>갤러리</h3>
             <ul>
-                <li><a href="#"><img src="./image/g17_1.jpg" alt="갤러리 이미지 1"></a></li>
-                <li><a href="#"><img src="./image/g17_2.jpg" alt="갤러리 이미지 2"></a></li>
+                <li><a href="#">
+                    <img src="./image/g17_1.jpg" alt="갤러리 이미지 1">
+                    <p>Lorem ipsum amet.</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./image/g17_2.jpg" alt="갤러리 이미지 2">
+                    <p>Lorem ipsum dolor sit</p>
+                </a></li>
             </ul>
         </div>
         <ul class="links">
-            <li><a href="#"><img src="./image/link17_1.jpg" alt="링크 이미지1"></a></li>
-            <li><a href="#"><img src="./image/link17_2.jpg" alt="링크 이미지2"></a></li>
-            <li><a href="#"><img src="./image/link17_3.jpg" alt="링크 이미지3"></a></li>
-            <li><a href="#"><img src="./image/link17_4.jpg" alt="링크 이미지4"></a></li>
+            <li><a href="#">
+                <img src="./image/link17_1.jpg" alt="링크 이미지1">
+                <p>link_1</p>
+            </a></li>
+            <li><a href="#">
+                <img src="./image/link17_2.jpg" alt="링크 이미지2">
+                <p>link_2</p>
+            </a></li>
+            <li><a href="#">
+                <img src="./image/link17_3.jpg" alt="링크 이미지3">
+                <p>link_3</p>
+            </a></li>
+            <li><a href="#"> <img src="./image/link17_4.jpg" alt="링크 이미지4">
+                <p>link_4</p>
+            </a></li>
         </ul>
     </div>
     <div class="slider">
@@ -123,5 +140,14 @@
         </div>
     </div>
    </div>
+
+   <script>
+    // 서브 메뉴
+    $('.gnb> li').hover(function(){
+        $(this).find('ul').stop().slideDown()
+    }, function(){
+        $(this).find('ul').stop().slideUp()
+    })
+   </script>
 </body>
 </html>
