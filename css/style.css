@@ -148,6 +148,7 @@ a {
 .notice {
     flex: 3;
     width: 400px;
+    margin-top: 50px;
 }
 
 .notice h3 {
@@ -163,6 +164,7 @@ a {
 
 .notice ul {
     padding: 10px;
+
 }
 .notice ul li {}
 .notice ul li a {
@@ -246,33 +248,41 @@ a {
 /* slider */
 .slider {
     flex: 1;
-    width: calc(100% - 600px);
-    height: calc(100% - 120px);
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .slide {
-    display: flex;
-    /* position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 600px);
-    height: calc(100% - 120px); */
+    width: 100%;
+    height: 100%;
 }
 
 .slide a {
-    /* position: absolute;
+    position: absolute;
     top: 0;
-    left: 0; */
-    width: calc(100% - 600px);
-    height: calc(100% - 120px);
+    width: 100%;
+    height: 100%;
+}
+
+.slide a:nth-child(1) {
+    left: 0;
+}
+.slide a:nth-child(2) {
+    left: 100%;
+}
+.slide a:nth-child(3) {
+    left: 200%;
 }
 
 .slider img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
 
 /* footer */
 .footer {
@@ -311,4 +321,31 @@ a {
 
 .copyright {
     padding: 0 10px;
+}
+
+
+/* modal */
+.modal {
+    width: 400px;
+    height: 300px;
+    background-color: lightpink;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    display: none;
+}
+
+.modal p {
+    margin: 16px 0;
+    line-height: 1.7;
+}
+
+.close {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+    cursor: pointer;
 }
