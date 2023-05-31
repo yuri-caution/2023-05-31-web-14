@@ -42,7 +42,9 @@ a {
 .gnb {
     padding: 10px;
 }
-.gnb >li {}
+.gnb >li {
+    position: relative;
+}
 .gnb >li > a {
     display: block;
     padding: 20px 10px;
@@ -50,14 +52,19 @@ a {
 }
 
 .gnb >li:hover > a {
-    background-color: coral;
+    background-color: chartreuse;
 }
 
 
 .gnb ul {
     display: none;
-    border-bottom: 1px solid #999;
+    background-color: #eee;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: 100%;
 }
+
 .gnb ul li {
 }
 .gnb ul li a {
@@ -66,35 +73,7 @@ a {
 }
 
 .gnb ul li a:hover {
-    background-color: lightcoral;
-}
-
-.spotMenu {
-    padding: 10px;
-    text-decoration: underline;
-    color: lightskyblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.spotMenu a {
-    padding: 0 16px;
-    position: relative;
-}
-
-.spotMenu a:hover {
-    font-weight: bold;
-}
-
-.spotMenu a:nth-child(1)::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 1px;
-    background-color: #999;
+    background-color: lightgreen;
 }
 
 
