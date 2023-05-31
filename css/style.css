@@ -270,3 +270,38 @@ body {
 .familySite {
     width: 230px;
 }
+
+
+/* modal */
+.modal {
+    width: 500px;
+    height: 300px;
+    background-color: lightcyan;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    display: none;
+}
+
+.modal h2 {
+    font-size: 30px;
+}
+
+.modal p {
+    line-height: 1.7;
+    margin: 20px 0;
+}
+
+.modal .close {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+}

@@ -125,8 +125,19 @@
         </div>
     </div>
 
-    <script>
+    <div class="modal">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur cum perferendis quam ab enim nobis consequuntur, quaerat molestias rem recusandae deleniti error accusamus. Excepturi minima ducimus autem illum facilis.</p>
+        <div class="close">닫기</div>
+    </div>
 
+    <script>
+        $('.notice ul li a:first').click(function(){
+            $('.modal').stop().show()
+        })
+        $('.close').click(function(){
+            $('.modal').stop().hide()
+        })
     </script>
 </body>
 </html>
