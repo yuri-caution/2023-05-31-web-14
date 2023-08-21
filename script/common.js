@@ -13,4 +13,13 @@ $(function(){
             $('.slide').css('left', 0)
         })
     },2700)
+
+
+    //modal
+    $('.notice ul li a:first').click(function(){
+        $('.modal').stop().show()
+    })
+    $('.close').click(function(){
+        $('.modal').stop().hide()
+    })
 })
